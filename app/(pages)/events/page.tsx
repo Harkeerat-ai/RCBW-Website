@@ -20,7 +20,7 @@ export default async function EventsPage() {
       <div className="container-main">
         <SectionHeading
           title="Our Events"
-          subtitle="From flagship galas to community service drives — discover the events that make RCBW a force for good."
+          subtitle="Discover the events that make RCBW a force for good."
           gradient
         />
         <EventsGrid events={events} avenues={avenues} />

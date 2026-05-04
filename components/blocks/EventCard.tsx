@@ -36,12 +36,7 @@ export default function EventCard({ event }: EventCardProps) {
             <path d="M65 40 C75 35, 85 45, 80 55 L70 50Z" opacity="0.6" />
           </svg>
         </div>
-        {/* Flagship Badge */}
-        {event.isFlagship && (
-          <div className="absolute top-3 right-3 px-2.5 py-1 rounded-full text-xs font-medium bg-accent/90 text-background backdrop-blur-sm">
-            ★ Flagship
-          </div>
-        )}
+
         {/* Date Badge */}
         <div className="absolute bottom-3 left-3 px-3 py-1.5 rounded-lg glass text-xs font-medium text-foreground">
           {formatDate(event.date)}

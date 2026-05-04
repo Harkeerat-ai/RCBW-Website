@@ -4,7 +4,6 @@
 import { client, isSanityConfigured } from "./client";
 import {
   allEventsQuery,
-  flagshipEventsQuery,
   eventBySlugQuery,
   allNewslettersQuery,
   latestNewsletterQuery,
@@ -23,11 +22,6 @@ import type { Event, Newsletter, BoardMember, Avenue } from "./types";
 export async function getAllEvents(): Promise<Event[]> {
   if (!isSanityConfigured()) return mockEvents;
   return client.fetch(allEventsQuery);
-}
-
-export async function getFlagshipEvents(): Promise<Event[]> {
-  if (!isSanityConfigured()) return mockEvents.filter((e) => e.isFlagship);
-  return client.fetch(flagshipEventsQuery);
 }
 
 export async function getEventBySlug(slug: string): Promise<Event | null> {

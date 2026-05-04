@@ -44,7 +44,6 @@ export interface Event {
   description: string;
   gallery?: SanityImage[];
   reportPDF?: SanityFile;
-  isFlagship?: boolean;
 }
 
 export interface Newsletter {

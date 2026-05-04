@@ -72,7 +72,7 @@ export const mockEvents: Event[] = [
     avenue: mockAvenues[4],
     description: "Our annual flagship gala celebrating the spirit of Rotaract. An evening of performances, awards, and fellowship that brings together members past and present. This year's theme celebrates resilience and the phoenix spirit that defines RCBW.",
     gallery: [mockImage("Gala 1"), mockImage("Gala 2"), mockImage("Gala 3")],
-    isFlagship: true,
+
   },
   {
     _id: "evt-2",
@@ -85,7 +85,7 @@ export const mockEvents: Event[] = [
     description: "A 24-hour hackathon bringing together developers, designers, and dreamers to build technology solutions for NGOs. Teams compete to create impactful tools that address real-world challenges faced by non-profit organizations in Mumbai.",
     gallery: [mockImage("Hackathon 1"), mockImage("Hackathon 2")],
     reportPDF: mockFile(),
-    isFlagship: true,
+
   },
   {
     _id: "evt-3",
@@ -96,7 +96,7 @@ export const mockEvents: Event[] = [
     coverImage: mockImage("Beach Cleanup"),
     avenue: mockAvenues[0],
     description: "Join us as we clean up Juhu Beach and raise awareness about ocean conservation. Together with local communities, we've removed over 2 tonnes of waste from Mumbai's coastline this year.",
-    isFlagship: false,
+
   },
   {
     _id: "evt-4",
@@ -109,7 +109,7 @@ export const mockEvents: Event[] = [
     description: "RCBW's annual Model UN conference brings together young leaders to debate global issues, build diplomatic skills, and forge international connections. This year features committees on climate action and digital governance.",
     gallery: [mockImage("MUN 1"), mockImage("MUN 2"), mockImage("MUN 3"), mockImage("MUN 4")],
     reportPDF: mockFile(),
-    isFlagship: true,
+
   },
   {
     _id: "evt-5",
@@ -120,7 +120,7 @@ export const mockEvents: Event[] = [
     coverImage: mockImage("Blitz Sports Fest"),
     avenue: mockAvenues[3],
     description: "Our inter-club sports festival featuring cricket, football, basketball, and more. Teams from Rotaract clubs across Mumbai compete in a day of sportsmanship and camaraderie.",
-    isFlagship: true,
+
   },
   {
     _id: "evt-6",
@@ -132,7 +132,7 @@ export const mockEvents: Event[] = [
     avenue: mockAvenues[2],
     description: "A full-day summit featuring industry leaders, panel discussions, and workshops focused on building the next generation of leaders. Topics include entrepreneurship, social impact, and personal branding.",
     reportPDF: mockFile(),
-    isFlagship: true,
+
   },
   {
     _id: "evt-7",
@@ -143,7 +143,7 @@ export const mockEvents: Event[] = [
     coverImage: mockImage("Blood Donation Camp"),
     avenue: mockAvenues[0],
     description: "Partnering with Bombay Blood Bank, we organize quarterly blood donation drives. This camp collected over 150 units of blood, potentially saving up to 450 lives.",
-    isFlagship: false,
+
   },
   {
     _id: "evt-8",
@@ -155,7 +155,7 @@ export const mockEvents: Event[] = [
     avenue: mockAvenues[3],
     description: "An evening celebrating India's Independence Day through music, dance, and art. Members showcase diverse cultural talents in this vibrant celebration of unity in diversity.",
     gallery: [mockImage("Rang 1"), mockImage("Rang 2")],
-    isFlagship: true,
+
   },
 ];
 

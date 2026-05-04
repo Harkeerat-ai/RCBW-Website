@@ -63,11 +63,7 @@ export default async function EventDetailPage({ params }: EventDetailPageProps) 
                 {event.avenue.name}
               </span>
             )}
-            {event.isFlagship && (
-              <span className="inline-block px-3 py-1 rounded-full text-xs font-medium bg-accent/20 text-accent">
-                ★ Flagship Event
-              </span>
-            )}
+
             <time className="text-sm text-muted">{formatDate(event.date)}</time>
           </div>
 

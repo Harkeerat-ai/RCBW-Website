@@ -8,10 +8,10 @@ const footerLinks = {
     { href: "/contact", label: "Contact" },
   ],
   avenues: [
-    { label: "Community Service" },
-    { label: "International Service" },
-    { label: "Professional Development" },
-    { label: "Sports & Culture" },
+    { label: "Community Service", href: "/events" },
+    { label: "International Service", href: "/events" },
+    { label: "Professional Development", href: "/events" },
+    { label: "Sports & Culture", href: "/events" },
   ],
 };
 
@@ -81,9 +81,12 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {footerLinks.avenues.map((avenue) => (
                 <li key={avenue.label}>
-                  <span className="text-sm text-muted">
+                  <Link
+                    href={avenue.href}
+                    className="text-sm text-muted hover:text-foreground transition-colors duration-200"
+                  >
                     {avenue.label}
-                  </span>
+                  </Link>
                 </li>
               ))}
             </ul>

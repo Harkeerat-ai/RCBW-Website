@@ -65,12 +65,6 @@ const event = {
       type: "file",
       options: { accept: ".pdf" },
     },
-    {
-      name: "isFlagship",
-      title: "Flagship Event",
-      type: "boolean",
-      initialValue: false,
-    },
   ],
 };
 

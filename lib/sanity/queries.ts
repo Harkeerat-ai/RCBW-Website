@@ -10,20 +10,7 @@ export const allEventsQuery = `*[_type == "event"] | order(date desc) {
   avenue->{_id, name, slug, color, icon},
   description,
   gallery,
-  reportPDF,
-  isFlagship
-}`;
-
-export const flagshipEventsQuery = `*[_type == "event" && isFlagship == true] | order(date desc) [0...6] {
-  _id,
-  _type,
-  title,
-  slug,
-  date,
-  coverImage,
-  avenue->{_id, name, slug, color, icon},
-  description,
-  isFlagship
+  reportPDF
 }`;
 
 export const eventBySlugQuery = `*[_type == "event" && slug.current == $slug][0] {
@@ -36,8 +23,7 @@ export const eventBySlugQuery = `*[_type == "event" && slug.current == $slug][0]
   avenue->{_id, name, slug, color, icon},
   description,
   gallery,
-  reportPDF,
-  isFlagship
+  reportPDF
 }`;
 
 export const allNewslettersQuery = `*[_type == "newsletter"] | order(issueNumber desc) {
