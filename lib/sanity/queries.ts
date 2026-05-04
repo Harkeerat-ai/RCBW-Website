@@ -69,3 +69,15 @@ export const allAvenuesQuery = `*[_type == "avenue"] | order(name asc) {
 }`;
 
 export const eventSlugsQuery = `*[_type == "event"] { "slug": slug.current }`;
+
+export const avenueBySlugQuery = `*[_type == "avenue" && slug.current == $slug][0] {
+  _id,
+  _type,
+  name,
+  slug,
+  color,
+  description,
+  icon
+}`;
+
+export const avenueSlugsQuery = `*[_type == "avenue"] { "slug": slug.current }`;

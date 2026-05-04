@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Newsletters - RC Bombay West</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed-variant": "#7a3005",
+                      "dark-ink": "#1F2937",
+                      "secondary-fixed": "#ffdeaa",
+                      "on-error-container": "#93000a",
+                      "outline": "#747783",
+                      "on-secondary-fixed-variant": "#5f4100",
+                      "on-primary-fixed": "#001848",
+                      "surface-tint": "#385bac",
+                      "on-surface": "#1a1b21",
+                      "inverse-primary": "#b2c5ff",
+                      "warm-gold": "#F3C969",
+                      "muted-slate": "#64748B",
+                      "primary-container": "#123c8c",
+                      "secondary-container": "#ffc55f",
+                      "on-tertiary-container": "#fa9261",
+                      "on-primary-container": "#8babff",
+                      "on-surface-variant": "#434651",
+                      "surface-container": "#eeedf5",
+                      "on-error": "#ffffff",
+                      "error": "#ba1a1a",
+                      "on-primary": "#ffffff",
+                      "outline-variant": "#c4c6d3",
+                      "surface-bright": "#faf8ff",
+                      "background": "#faf8ff",
+                      "on-secondary-fixed": "#271900",
+                      "primary-fixed-dim": "#b2c5ff",
+                      "off-white": "#F8FAFC",
+                      "inverse-surface": "#2f3036",
+                      "error-container": "#ffdad6",
+                      "on-primary-fixed-variant": "#1b4292",
+                      "surface-dim": "#dad9e1",
+                      "surface-container-high": "#e8e7ef",
+                      "on-tertiary-fixed": "#351000",
+                      "primary-fixed": "#dae2ff",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-container": "#722a00",
+                      "surface-container-low": "#f4f3fa",
+                      "on-secondary-container": "#755100",
+                      "tertiary-fixed-dim": "#ffb595",
+                      "secondary-fixed-dim": "#f5bd58",
+                      "primary": "#002667",
+                      "deep-navy": "#0B1F4D",
+                      "surface-container-highest": "#e2e2e9",
+                      "on-background": "#1a1b21",
+                      "surface": "#faf8ff",
+                      "tertiary": "#4e1a00",
+                      "surface-container-lowest": "#ffffff",
+                      "inverse-on-surface": "#f1f0f7",
+                      "surface-variant": "#e2e2e9",
+                      "secondary": "#7d5700",
+                      "on-secondary": "#ffffff",
+                      "tertiary-fixed": "#ffdbcc"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "sm": "16px",
+                      "md": "32px",
+                      "xs": "8px",
+                      "max-width": "1280px",
+                      "lg": "64px",
+                      "gutter": "80px",
+                      "xl": "128px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "section-h2": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "hero-h1": [
+                              "Plus Jakarta Sans"
+                      ],
+                      "body": [
+                              "Inter"
+                      ],
+                      "meta-label": [
+                              "Inter"
+                      ],
+                      "card-h3": [
+                              "Plus Jakarta Sans"
+                      ]
+              },
+              "fontSize": {
+                      "section-h2": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.15",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "hero-h1": [
+                              "80px",
+                              {
+                                      "lineHeight": "1.15",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "body": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.65",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "meta-label": [
+                              "14px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "+0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "card-h3": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.15",
+                                      "fontWeight": "600"
+                              }
+                      ]
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface antialiased pt-24 font-body">
+<!-- Header Navigation Component -->
+<nav class="fixed w-full top-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-md border-b border-slate-100 dark:border-slate-800 shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-[1440px] mx-auto">
+<!-- Brand Logo -->
+<a class="text-2xl font-black text-[#123C8C] dark:text-blue-400 tracking-tighter" href="#">
+                RC BOMBAY WEST
+            </a>
+<!-- Navigation Links (Desktop) -->
+<div class="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] font-bold tracking-tight">
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#123C8C] dark:hover:text-blue-300 transition-colors duration-300" href="#">Home</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#123C8C] dark:hover:text-blue-300 transition-colors duration-300" href="#">About</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#123C8C] dark:hover:text-blue-300 transition-colors duration-300" href="#">Projects</a>
+<a class="text-[#123C8C] dark:text-blue-400 border-b-2 border-[#123C8C] dark:border-blue-400 pb-1" href="#">Newsletters</a>
+</div>
+<!-- Trailing Action -->
+<button class="bg-[#123C8C] text-white px-6 py-2.5 rounded-lg font-semibold tracking-wide hover:scale-105 transition-transform duration-200 shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
+                Join Us
+            </button>
+</div>
+</nav>
+<!-- Featured Issue Section -->
+<section class="bg-off-white py-xl relative overflow-hidden">
+<div class="max-w-max-width mx-auto px-lg lg:px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Magazine Cover Image -->
+<div class="lg:col-span-5 relative group">
+<div class="relative aspect-[3/4] w-full rounded-lg overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.08)] group-hover:shadow-[0_12px_40px_rgba(0,0,0,0.14)] transition-all duration-500 transform group-hover:-translate-y-2">
+<img alt="Phoenix Edition Newsletter Cover" class="w-full h-full object-cover" data-alt="A high-quality, professional magazine cover design for a Rotaract newsletter named 'Phoenix Edition'. The design features a modern, expressively minimal layout with elegant typography. The cover image showcases an abstract representation of upward motion and growth, utilizing a light mode aesthetic with crisp whites and subtle off-white gradients. Accents of deep royal blue and warm saffron gold are strategically placed. The overall mood is prestigious, cultural, and energetic, resembling a high-end editorial publication." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG7fnMWTcq41Gc6Itis7h7go4S5MytWwMKn_119NNsQVW6vTv9Un4P_tF6R3jUVX3KhWBPR1GTCgL70FkzJKZoc1Ivgz5UtttD36AbBrGsdrAJgPQLNEEY65lIhYA8ZiFmRiLp40boLf__e71T7OyGV6OopLcOofVJ8AXOHrSXj3m4_Lq6oV1CpbBKEjJhozCua_XW4EUGvgLTB4tSBr-7ld95JSEoqVXX-XWW-QT8RdDpm2dilcdgdfvyRFPu5g4wjXJMo3ve"/>
+<!-- Overlay for depth -->
+<div class="absolute inset-0 bg-gradient-to-t from-deep-navy/40 to-transparent pointer-events-none mix-blend-multiply"></div>
+</div>
+</div>
+<!-- Featured Content -->
+<div class="lg:col-span-7 flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 mb-6">
+<span class="w-8 h-[2px] bg-warm-gold"></span>
+<span class="font-meta-label text-meta-label text-muted-slate uppercase tracking-widest">Latest Release</span>
+</div>
+<h1 class="font-hero-h1 text-hero-h1 text-dark-ink mb-4">
+                        Phoenix Edition
+                    </h1>
+<div class="font-meta-label text-meta-label text-primary mb-8 flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+                        July 2024
+                    </div>
+<p class="font-body text-body text-muted-slate mb-10 max-w-2xl">
+                        Explore our comprehensive coverage of community initiatives, the inauguration of new club leadership, and exclusive insights into our upcoming cultural flagship events.
+                    </p>
+<div class="flex items-center gap-6">
+<a class="inline-flex items-center justify-center bg-primary text-on-primary font-meta-label text-meta-label px-8 py-4 rounded-lg shadow-[0_4px_24px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.14)] transition-all duration-300 hover:-translate-y-1" href="#">
+<span class="material-symbols-outlined mr-2" style="font-variation-settings: 'FILL' 1;">download</span>
+                            Download Issue
+                        </a>
+<a class="inline-flex items-center justify-center border border-primary text-primary font-meta-label text-meta-label px-8 py-4 rounded-lg hover:bg-surface-container-low transition-colors duration-300" href="#">
+                            Read Online
+                        </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Archive Section -->
+<section class="bg-surface py-xl">
+<div class="max-w-max-width mx-auto px-lg lg:px-gutter">
+<div class="flex flex-col md:flex-row justify-between items-baseline border-b border-surface-variant pb-8 mb-12">
+<h2 class="font-section-h2 text-section-h2 text-dark-ink">
+                    Past Issues
+                </h2>
+<div class="font-meta-label text-meta-label text-muted-slate mt-4 md:mt-0">
+                    Browsing the full archive
+                </div>
+</div>
+<!-- Editorial List Layout -->
+<div class="flex flex-col">
+<!-- Issue Row 1 -->
+<div class="group flex flex-col md:flex-row md:items-center justify-between py-10 border-b border-surface-variant hover:bg-surface-container-low transition-colors duration-300 px-6 -mx-6 rounded-lg cursor-pointer">
+<div class="flex-1 md:pr-12">
+<div class="font-meta-label text-meta-label text-muted-slate mb-2">June 2024</div>
+<h3 class="font-card-h3 text-card-h3 text-dark-ink mb-2 group-hover:text-primary transition-colors duration-300">The Change Makers</h3>
+<p class="font-body text-body text-muted-slate line-clamp-1 text-base">Highlighting our annual environmental drive and local community impact awards.</p>
+</div>
+<div class="mt-6 md:mt-0 flex-shrink-0">
+<span class="inline-flex items-center font-meta-label text-meta-label text-primary group-hover:underline decoration-2 underline-offset-4">
+                            View Issue <span class="material-symbols-outlined ml-1 text-[18px]">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- Issue Row 2 -->
+<div class="group flex flex-col md:flex-row md:items-center justify-between py-10 border-b border-surface-variant hover:bg-surface-container-low transition-colors duration-300 px-6 -mx-6 rounded-lg cursor-pointer">
+<div class="flex-1 md:pr-12">
+<div class="font-meta-label text-meta-label text-muted-slate mb-2">May 2024</div>
+<h3 class="font-card-h3 text-card-h3 text-dark-ink mb-2 group-hover:text-primary transition-colors duration-300">Youth &amp; Innovation</h3>
+<p class="font-body text-body text-muted-slate line-clamp-1 text-base">A deep dive into our digital literacy workshops and future-ready skill building seminars.</p>
+</div>
+<div class="mt-6 md:mt-0 flex-shrink-0">
+<span class="inline-flex items-center font-meta-label text-meta-label text-primary group-hover:underline decoration-2 underline-offset-4">
+                            View Issue <span class="material-symbols-outlined ml-1 text-[18px]">arrow_forward</span>
+</span>
+</div>
+</div>
+<!-- Issue Row 3 -->
+<div class="group flex flex-col md:flex-row md:items-center justify-between py-10 border-b border-surface-variant hover:bg-surface-container-low transition-colors duration-300 px-6 -mx-6 rounded-lg cursor-pointer">
+<div class="flex-1 md:pr-12">
+<div class="font-meta-label text-meta-label text-muted-slate mb-2">April 2024</div>
+<h3 class="font-card-h3 text-card-h3 text-dark-ink mb-2 group-hover:text-primary transition-colors duration-300">Cultural Horizons</h3>
+<p class="font-body text-body text-muted-slate line-clamp-1 text-base">Celebrating the diverse heritage of our members and the success of the Spring Gala.</p>
+</div>
+<div class="mt-6 md:mt-0 flex-shrink-0">
+<span class="inline-flex items-center font-meta-label text-meta-label text-primary group-hover:underline decoration-2 underline-offset-4">
+                            View Issue <span class="material-symbols-outlined ml-1 text-[18px]">arrow_forward</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Pagination (Minimal) -->
+<div class="mt-16 flex justify-center items-center gap-4">
+<button class="w-10 h-10 rounded-full border border-surface-variant flex items-center justify-center text-muted-slate hover:border-primary hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<span class="font-meta-label text-meta-label text-dark-ink">Page 1 of 4</span>
+<button class="w-10 h-10 rounded-full border border-surface-variant flex items-center justify-center text-muted-slate hover:border-primary hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Footer Component -->
+<footer class="bg-slate-900 dark:bg-black w-full rounded-none border-t border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 px-20 py-24 w-full max-w-[1440px] mx-auto">
+<div class="md:col-span-4 flex flex-col gap-6">
+<div class="text-xl font-bold text-white uppercase tracking-[0.2em]">
+                    RC BOMBAY WEST
+                </div>
+<p class="font-['Inter'] text-sm tracking-wide text-white opacity-80">
+                    © 2024 Rotaract Club of Bombay West. Phoenix - Rise Above Yourself.
+                </p>
+</div>
+<div class="md:col-span-8 flex flex-wrap gap-x-12 gap-y-4 md:justify-end">
+<a class="font-['Inter'] text-sm tracking-wide text-slate-400 hover:text-white transition-colors opacity-80 hover:opacity-100 hover:translate-x-1 transition-transform duration-300 inline-block" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-sm tracking-wide text-slate-400 hover:text-white transition-colors opacity-80 hover:opacity-100 hover:translate-x-1 transition-transform duration-300 inline-block" href="#">Contact Us</a>
+<a class="font-['Inter'] text-sm tracking-wide text-slate-400 hover:text-white transition-colors opacity-80 hover:opacity-100 hover:translate-x-1 transition-transform duration-300 inline-block" href="#">Rotary International</a>
+<a class="font-['Inter'] text-sm tracking-wide text-slate-400 hover:text-white transition-colors opacity-80 hover:opacity-100 hover:translate-x-1 transition-transform duration-300 inline-block" href="#">District 3141</a>
+</div>
+</div>
+</footer>
+</body></html>

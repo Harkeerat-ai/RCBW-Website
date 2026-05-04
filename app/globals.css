@@ -4,30 +4,30 @@
 
 @theme inline {
   /* ── Colors ── */
-  --color-background: #0A0A0F;
-  --color-foreground: #F5F0EB;
-  --color-surface: #141419;
-  --color-surface-elevated: #1C1C24;
-  --color-border: #2A2A35;
-  --color-border-subtle: #1E1E28;
+  --color-background: #F8FAFC;
+  --color-foreground: #1F2937;
+  --color-surface: #FFFFFF;
+  --color-surface-elevated: #F1F5F9;
+  --color-border: #E2E8F0;
+  --color-border-subtle: #F1F5F9;
 
-  --color-primary: #E63946;
-  --color-primary-light: #FF6B6B;
-  --color-primary-dark: #B91C2C;
+  --color-primary: #123C8C;
+  --color-primary-light: #1D4ED8;
+  --color-primary-dark: #0B1F4D;
 
-  --color-accent: #F4A236;
-  --color-accent-light: #FBBF24;
-  --color-accent-dark: #D97706;
+  --color-accent: #D9A441;
+  --color-accent-light: #F3C969;
+  --color-accent-dark: #B45309;
 
-  --color-phoenix-gradient-start: #E63946;
-  --color-phoenix-gradient-mid: #F4A236;
-  --color-phoenix-gradient-end: #FBBF24;
+  --color-phoenix-gradient-start: #123C8C;
+  --color-phoenix-gradient-mid: #0B1F4D;
+  --color-phoenix-gradient-end: #D9A441;
 
-  --color-muted: #9CA3AF;
-  --color-muted-foreground: #6B7280;
+  --color-muted: #64748B;
+  --color-muted-foreground: #475569;
 
   /* ── Typography ── */
-  --font-heading: var(--font-outfit), "Outfit", system-ui, sans-serif;
+  --font-heading: var(--font-plus-jakarta-sans), "Plus Jakarta Sans", system-ui, sans-serif;
   --font-body: var(--font-inter), "Inter", system-ui, sans-serif;
 
   /* ── Spacing ── */
@@ -50,7 +50,7 @@
 
 html {
   scroll-behavior: smooth;
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {

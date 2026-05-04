@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RC Bombay West - Phoenix</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#4e1a00",
+                        "on-secondary-fixed-variant": "#5f4100",
+                        "secondary": "#7d5700",
+                        "on-primary-fixed-variant": "#1b4292",
+                        "on-secondary": "#ffffff",
+                        "outline": "#747783",
+                        "on-tertiary-fixed-variant": "#7a3005",
+                        "tertiary-fixed": "#ffdbcc",
+                        "outline-variant": "#c4c6d3",
+                        "secondary-fixed": "#ffdeaa",
+                        "on-tertiary-fixed": "#351000",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#f1f0f7",
+                        "muted-slate": "#64748B",
+                        "off-white": "#F8FAFC",
+                        "on-tertiary-container": "#fa9261",
+                        "secondary-container": "#ffc55f",
+                        "surface-container-highest": "#e2e2e9",
+                        "surface-variant": "#e2e2e9",
+                        "on-secondary-container": "#755100",
+                        "tertiary-fixed-dim": "#ffb595",
+                        "on-surface-variant": "#434651",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#dad9e1",
+                        "secondary-fixed-dim": "#f5bd58",
+                        "inverse-surface": "#2f3036",
+                        "on-surface": "#1a1b21",
+                        "inverse-primary": "#b2c5ff",
+                        "deep-navy": "#0B1F4D",
+                        "surface-tint": "#385bac",
+                        "surface-container-high": "#e8e7ef",
+                        "on-primary": "#ffffff",
+                        "primary": "#002667",
+                        "on-background": "#1a1b21",
+                        "surface-container": "#eeedf5",
+                        "error": "#ba1a1a",
+                        "warm-gold": "#F3C969",
+                        "tertiary-container": "#722a00",
+                        "on-secondary-fixed": "#271900",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#001848",
+                        "primary-fixed-dim": "#b2c5ff",
+                        "primary-container": "#123c8c",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#dae2ff",
+                        "on-error-container": "#93000a",
+                        "dark-ink": "#1F2937",
+                        "surface-bright": "#faf8ff",
+                        "background": "#faf8ff",
+                        "surface": "#faf8ff",
+                        "surface-container-low": "#f4f3fa",
+                        "on-primary-container": "#8babff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "lg": "64px",
+                        "max-width": "1280px",
+                        "sm": "16px",
+                        "xl": "128px",
+                        "xs": "8px",
+                        "gutter": "80px",
+                        "md": "32px"
+                    },
+                    "fontFamily": {
+                        "section-h2": ["Plus Jakarta Sans"],
+                        "card-h3": ["Plus Jakarta Sans"],
+                        "body": ["Inter"],
+                        "meta-label": ["Inter"],
+                        "hero-h1": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "section-h2": ["48px", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "card-h3": ["28px", { "lineHeight": "1.15", "fontWeight": "600" }],
+                        "body": ["18px", { "lineHeight": "1.65", "fontWeight": "400" }],
+                        "meta-label": ["14px", { "lineHeight": "1", "letterSpacing": "+0.05em", "fontWeight": "500" }],
+                        "hero-h1": ["80px", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "800" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body min-h-screen antialiased flex flex-col">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-[1440px] mx-auto">
+<div class="text-2xl font-black text-[#123C8C] tracking-tighter">RC BOMBAY WEST</div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-[#123C8C] border-b-2 border-[#123C8C] pb-1 font-['Plus_Jakarta_Sans'] font-bold tracking-tight hover:text-[#123C8C] transition-colors duration-300" href="#">Home</a>
+<a class="text-slate-500 font-medium font-['Plus_Jakarta_Sans'] font-bold tracking-tight hover:text-[#123C8C] transition-colors duration-300" href="#">About</a>
+<a class="text-slate-500 font-medium font-['Plus_Jakarta_Sans'] font-bold tracking-tight hover:text-[#123C8C] transition-colors duration-300" href="#">Projects</a>
+<a class="text-slate-500 font-medium font-['Plus_Jakarta_Sans'] font-bold tracking-tight hover:text-[#123C8C] transition-colors duration-300" href="#">Newsletters</a>
+</nav>
+<button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-lg font-meta-label text-meta-label scale-105 transition-transform duration-200">Join Us</button>
+<button class="md:hidden text-[#123C8C]">
+<span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pt-[88px]">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center justify-center bg-gradient-to-br from-deep-navy via-primary to-primary-container overflow-hidden">
+<div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&amp;fit=crop&amp;q=80')] bg-cover bg-center opacity-20 mix-blend-overlay" data-alt="Abstract upward motion lines and light beams piercing through a deep navy gradient background, symbolizing the rise of a phoenix. The lighting is dramatic yet soft, creating a premium, ambitious mood consistent with a modern minimalist aesthetic."></div>
+<div class="relative z-10 max-w-max-width mx-auto px-8 md:px-gutter text-center flex flex-col items-center">
+<h1 class="font-hero-h1 text-hero-h1 text-white mb-6 max-w-4xl tracking-tight">
+<span class="text-warm-gold block mb-2">Phoenix</span>
+                    Rise Above Yourself
+                </h1>
+<p class="font-body text-body text-primary-fixed max-w-2xl mb-10 opacity-90">
+                    Join a community of young leaders dedicated to creating lasting impact through service, professional development, and cultural expression.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+<button class="bg-warm-gold text-dark-ink px-8 py-4 rounded-lg font-meta-label text-meta-label shadow-[0_4px_24px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.14)] hover:-translate-y-1 transition-all duration-300">
+                        Become a Member
+                    </button>
+<button class="border border-white/30 text-white hover:bg-white/10 px-8 py-4 rounded-lg font-meta-label text-meta-label transition-colors duration-300">
+                        Explore Our Vision
+                    </button>
+</div>
+</div>
+<!-- Upward overlap indicator -->
+<div class="absolute bottom-0 w-full h-32 bg-gradient-to-t from-background to-transparent z-20 translate-y-16"></div>
+</section>
+<!-- About Snapshot Section -->
+<section class="py-xl max-w-max-width mx-auto px-8 md:px-gutter relative z-30">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-5 space-y-6">
+<span class="font-meta-label text-meta-label text-primary-container uppercase tracking-widest">Our Legacy</span>
+<h2 class="font-section-h2 text-section-h2 text-deep-navy">Empowering Youth Since 1992.</h2>
+<p class="font-body text-body text-muted-slate">
+                        Rotaract Club of Bombay West is not just an organization; it's a movement. We bring together passionate individuals to tackle pressing social issues while fostering personal growth and lifelong friendships.
+                    </p>
+<a class="inline-flex items-center text-primary-container font-meta-label text-meta-label hover:text-deep-navy transition-colors group mt-4" href="#">
+                        Discover Our History
+                        <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="md:col-span-7 relative">
+<div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
+<img alt="Team meeting" class="w-full h-full object-cover" data-alt="A diverse group of young professionals engaged in a collaborative discussion around a modern meeting table. Warm, natural light streams through large windows, creating a bright and energetic atmosphere. The setting is clean and professional, aligning with a premium startup visual language, dominated by subtle greys and warm skin tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv8AZ7gRlSnNaFDTEkG0w1YywEiiYeCCL7KcBedpUmEx14O9Ty6cf79JZgouHUlWiNc2YdzWv7SaEWbd-HYeyqlQ3CB4qoFc9XmRpmIEyecCDl7_uckfbHxmlxo5TGFIQVv_unYd4rbLXJoaSdvatu_3rS7P6TjM7rJa3U8_DCpQ9bk8hCfvwj8YvgD--0amht3PtgNdFN0huhmTpXTKJ_akWAYK5rB7e1eb0Tc2TrRt9DHVwOdVDXdlc-gVxJ4sz8bykTLujb"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-white p-6 rounded-xl shadow-[0_12px_40px_rgba(0,0,0,0.14)] hidden md:block">
+<div class="font-section-h2 text-section-h2 text-warm-gold">30+</div>
+<div class="font-meta-label text-meta-label text-muted-slate uppercase tracking-wider">Years of Service</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Flagship Previews -->
+<section class="py-xl bg-surface-container-low">
+<div class="max-w-max-width mx-auto px-8 md:px-gutter">
+<div class="text-center mb-16">
+<span class="font-meta-label text-meta-label text-primary-container uppercase tracking-widest block mb-4">Our Initiatives</span>
+<h2 class="font-section-h2 text-section-h2 text-deep-navy">Flagship Projects</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Project Card 1 -->
+<div class="group bg-white rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.14)] hover:-translate-y-1 transition-all duration-300">
+<div class="aspect-[3/2] relative overflow-hidden">
+<img alt="Project Astra" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" data-alt="A vibrant stage performance with dynamic lighting, capturing the energy of a large cultural festival. Deep blues and purples dominate the lighting scheme, contrasting with the energetic action on stage. The image conveys a high-production value, premium event atmosphere typical of a flagship cultural showcase." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRq02DTha8PiO7sllQ-I5cMyENjZswA3W_l4pi5xnC-rm-iPfdRIYfbGFK8znJav60AhqerlTkysGQGkj4iw3zgprjl71d4oPsoFbOLtjVxyzPEnS_N0DQq0R4zvDQJEFFReHGnIVMmUcHlUYN9rjpxNSTk_tR9YmRvZDEMHjAeO9rIALoXbIgTft9QaLfXPPhQswPFGoAd3-rktoz0HnDTF9LEbtFZDYVnVXFODnftIP7xyWzw6dtQ-0eQqfhmmL_ollvRmED"/>
+<div class="absolute top-4 left-4 bg-warm-gold text-dark-ink px-3 py-1 rounded-full font-meta-label text-meta-label">Culture</div>
+</div>
+<div class="p-6">
+<h3 class="font-card-h3 text-card-h3 text-deep-navy mb-2">Astra</h3>
+<p class="font-body text-body text-muted-slate line-clamp-2 text-sm">Our annual cultural extravaganza celebrating diverse talents and artistic expression across the district.</p>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group bg-white rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.14)] hover:-translate-y-1 transition-all duration-300">
+<div class="aspect-[3/2] relative overflow-hidden">
+<img alt="Bollyween" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" data-alt="A lively themed party environment with people in creative costumes. The lighting is moody and festive, with warm string lights and subtle orange glows creating an engaging, celebratory mood. The aesthetic is young, vibrant, and energetic, focusing on social connection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8K6sqja15JTkgOA3IyN4OIohFeN9MPbSv7Y3Yjn8IvjYTy9U6P635QfPH5F5HTgA3FLayW6WBBwayWTdYJ31fMJX6o_bzl1dspMTud3wa7WnIar09y_gj6Vgt62cxk0vn5MY9myRy-rVDuKt9MrEYUjVjH-MvMIzaHvfmbvInRQAty1GY69FKy7Pxd7IKPbC3wmE53q67Wtvkff12DuWoOfdA9-5M2NDUCeND67sQSIQ-ks8hIRrvzekD8mdG8x5dwkxiWZJx"/>
+<div class="absolute top-4 left-4 bg-warm-gold text-dark-ink px-3 py-1 rounded-full font-meta-label text-meta-label">Fellowship</div>
+</div>
+<div class="p-6">
+<h3 class="font-card-h3 text-card-h3 text-deep-navy mb-2">Bollyween</h3>
+<p class="font-body text-body text-muted-slate line-clamp-2 text-sm">The ultimate fusion of Bollywood glamour and Halloween thrills, our signature fellowship event.</p>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="group bg-white rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.14)] hover:-translate-y-1 transition-all duration-300">
+<div class="aspect-[3/2] relative overflow-hidden">
+<img alt="Revive" class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" data-alt="Volunteers engaged in a community service activity, perhaps planting trees or cleaning a public space. Bright, natural daylight highlights the positive, impactful nature of the work. The scene feels grounding and essential, with earthy tones and a focus on collective effort." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK2yYG8wT17Lss0K8ZVSTvEPvc991C3enalabjyvlPcT4jyibDY8RwG7sryz8GoWWFKzu02tOE2eQC2dG9hGRjPa9y79cDKgbWFT3oyTuyAyRCXuum1xuixInkIYvTFEetoYLmCs7XrI8nCNohOo0ZXP6rKjApN3p_MqYtTTNqwoCRrP10n5zuNPzYPOn9_ypqZgCx7_M3-nNw3FMgESGR_drDcYaqGnzPCLaJqYQcn9Kkjc6-q4TB_Rh0JdidKwfse3v0crky"/>
+<div class="absolute top-4 left-4 bg-warm-gold text-dark-ink px-3 py-1 rounded-full font-meta-label text-meta-label">Community</div>
+</div>
+<div class="p-6">
+<h3 class="font-card-h3 text-card-h3 text-deep-navy mb-2">Revive</h3>
+<p class="font-body text-body text-muted-slate line-clamp-2 text-sm">A dedicated environmental and social initiative focused on sustainable community development.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact Stats -->
+<section class="py-xl bg-deep-navy text-white relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-primary/50 to-transparent"></div>
+<div class="max-w-max-width mx-auto px-8 md:px-gutter relative z-10">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/10">
+<div class="p-4">
+<div class="text-[64px] font-extrabold text-warm-gold leading-none mb-2">150+</div>
+<div class="font-meta-label text-meta-label text-primary-fixed uppercase tracking-[0.05em]">Active Members</div>
+</div>
+<div class="p-4">
+<div class="text-[64px] font-extrabold text-warm-gold leading-none mb-2">45</div>
+<div class="font-meta-label text-meta-label text-primary-fixed uppercase tracking-[0.05em]">Projects Yearly</div>
+</div>
+<div class="p-4">
+<div class="text-[64px] font-extrabold text-warm-gold leading-none mb-2">10k</div>
+<div class="font-meta-label text-meta-label text-primary-fixed uppercase tracking-[0.05em]">Lives Touched</div>
+</div>
+<div class="p-4">
+<div class="text-[64px] font-extrabold text-warm-gold leading-none mb-2">32</div>
+<div class="font-meta-label text-meta-label text-primary-fixed uppercase tracking-[0.05em]">Awards Won</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Strip -->
+<section class="py-xl overflow-hidden">
+<div class="max-w-max-width mx-auto px-8 md:px-gutter mb-12 flex justify-between items-end">
+<div>
+<h2 class="font-section-h2 text-section-h2 text-deep-navy mb-2">Moments of Impact</h2>
+<p class="font-body text-body text-muted-slate">A glimpse into our journey of service and fellowship.</p>
+</div>
+<a class="hidden md:inline-flex items-center text-primary-container font-meta-label text-meta-label hover:text-deep-navy transition-colors group" href="#">
+                    View Full Gallery
+                    <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="flex gap-4 px-8 md:px-gutter overflow-x-auto pb-8 snap-x snap-mandatory hide-scrollbar">
+<div class="flex-none w-80 h-96 rounded-xl overflow-hidden snap-center relative group">
+<img alt="Event crowd" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A large, engaged crowd at a youth conference, seen from behind. The lighting is dramatic, focusing on a brightly lit stage in the distance, conveying a sense of scale and shared experience. The mood is inspiring and focused." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1SP3xIwJqnwG55FvzkzN_-mqmXxFzE1uKlP7tiYsB5YtRdrUjvn-ALLc6j6v3SZKnzjBthSEvzkve0N-l_IfowDp9cKWnb308DUYWJCu0ujpEoWzjMHgOJ1Lt6SPKmOk3EkQSc30xXrAtNP8ZhrDVt6w8yQXKHXfYY62MuF02TYj8m2pBEXtKpm__pOcuEAracHRnwP6hOtlds3jWCVKcrZmt7_WlC667AEJTDunUjqZmFytvdhQpB-Z2WFFvWbni7rWwgGiO"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-white font-meta-label">District Assembly</span>
+</div>
+</div>
+<div class="flex-none w-[400px] h-96 rounded-xl overflow-hidden snap-center relative group">
+<img alt="Community work" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of hands planting a small sapling in rich dark soil. Warm sunlight filters through leaves, creating a hopeful, nurturing atmosphere. The image feels tactile and deeply connected to environmental stewardship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDjBaK0wsWmsPMz8TvBq8zuDFNP_B82KBdAiLp7LH3Em2ctofkfEW2wJHJNNGocnfGb6eetEqBNdtdz3Qn4K1Nl6aP4BMMjKgvrEiX5VxSjXNZjuQv7y91iRrhEEz46JPz9vYtqajCAjO8W9SD52wCXWiphcyKt_Bkj1yRzUuGX2XwFRu70ETMS7I8a-0Sw-ddLWd7hgdNaP2CU6oK-nURobI_Mjey8ClY8lkRhUdP0hiVgMgqilC1pb78BQ6uVPq4IswW7ixH"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-white font-meta-label">Project Green</span>
+</div>
+</div>
+<div class="flex-none w-80 h-96 rounded-xl overflow-hidden snap-center relative group">
+<img alt="Team celebration" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A candid, joyful moment of young people laughing and celebrating together outdoors. The bright, high-key lighting emphasizes friendship and camaraderie. The aesthetic is vibrant and energetic, capturing the spirit of youth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvsWHY7oNmDSmV0RwIrXG0Vplbak7nWz56NgjcBJQuD-7zdiJ_Q7_RqhFrTTxhBmfXrkxw_nk9QpjnrsJvJT3lNXw4MS6fo_qLyNyufpoMalA_mL5EVQDzFFsW3D3wTTEhhPST_FVSGdPOycXSYt3WZ5-PYTJhWBwyjBmH8DuZ3lHBdaUSVWxQxoZ0wVtaFlVk0NehXKa8L9b2Cp023taVZPipOurEYkWlBxhcECqf4KCyt8V7Ii_pOxzdEm_wSGm_KEgzBcu5"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-white font-meta-label">Installation Ceremony</span>
+</div>
+</div>
+<div class="flex-none w-[400px] h-96 rounded-xl overflow-hidden snap-center relative group">
+<img alt="Workshop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A focused workshop setting with individuals actively participating in a learning session. Professional, clean lighting highlights modern workspace elements. The image projects an atmosphere of growth, learning, and professional development." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJ8fKyG_pmNq6lDqcBZ0aipq2TNADfxn-7WaPD6bHOnmJOz-wFi3arOjz6XtFwBfOcZh1-AUsTJGsuqCOxi1sx1ZD5wDyMWgsjGcJyuGEtpKs-6kfguKIgLKi0VopX6-NsykeUePkFvHlcJZS7w6S-j2t2pR7pEDoCiZgqPRzo5xDCX2oX4R_ht83ukkfpXpvH-j3m5398kAy8Ghk1Uvefc9co_l_J_8AKZEfXNlWQP3EA3jiFmxpGrnK0nvDR1niYdNjqhYRq"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-white font-meta-label">Leadership Summit</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Band -->
+<section class="py-xl bg-gradient-to-br from-primary-container to-primary text-center px-8">
+<div class="max-w-3xl mx-auto">
+<h2 class="font-section-h2 text-section-h2 text-white mb-6">Ready to Rise?</h2>
+<p class="font-body text-body text-primary-fixed mb-10">Become a part of RC Bombay West and help us build a legacy of service, leadership, and fellowship.</p>
+<button class="bg-warm-gold text-dark-ink px-10 py-4 rounded-lg font-meta-label text-meta-label shadow-[0_4px_24px_rgba(0,0,0,0.08)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.14)] hover:-translate-y-1 transition-all duration-300">
+                    Join the Movement
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 grid grid-cols-1 md:grid-cols-12 gap-8 px-20 py-24 w-full border-t border-slate-800">
+<div class="md:col-span-4 flex flex-col gap-4">
+<div class="text-xl font-bold text-white uppercase tracking-[0.2em]">RC BOMBAY WEST</div>
+<p class="font-['Inter'] text-sm tracking-wide text-slate-400">© 2024 Rotaract Club of Bombay West. Phoenix - Rise Above Yourself.</p>
+</div>
+<div class="md:col-span-8 flex flex-wrap gap-8 justify-start md:justify-end items-start">
+<a class="font-['Inter'] text-sm tracking-wide text-slate-400 hover:text-white transition-colors hover:translate-x-1 duration-300" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-sm tracking-wide text-slate-400 hover:text-white transition-colors hover:translate-x-1 duration-300" href="#">Contact Us</a>
+<a class="font-['Inter'] text-sm tracking-wide text-slate-400 hover:text-white transition-colors hover:translate-x-1 duration-300" href="#">Rotary International</a>
+<a class="font-['Inter'] text-sm tracking-wide text-slate-400 hover:text-white transition-colors hover:translate-x-1 duration-300" href="#">District 3141</a>
+</div>
+</footer>
+<style>
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</body></html>

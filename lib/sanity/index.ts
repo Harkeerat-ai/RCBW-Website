@@ -10,6 +10,8 @@ import {
   allBoardMembersQuery,
   allAvenuesQuery,
   eventSlugsQuery,
+  avenueBySlugQuery,
+  avenueSlugsQuery,
 } from "./queries";
 import {
   mockEvents,
@@ -56,4 +58,18 @@ export async function getEventSlugs(): Promise<{ slug: string }[]> {
     return mockEvents.map((e) => ({ slug: e.slug.current }));
   }
   return client.fetch(eventSlugsQuery);
+}
+
+export async function getAvenueBySlug(slug: string): Promise<Avenue | null> {
+  if (!isSanityConfigured()) {
+    return mockAvenues.find((a) => a.slug.current === slug) || null;
+  }
+  return client.fetch(avenueBySlugQuery, { slug });
+}
+
+export async function getAvenueSlugs(): Promise<{ slug: string }[]> {
+  if (!isSanityConfigured()) {
+    return mockAvenues.map((a) => ({ slug: a.slug.current }));
+  }
+  return client.fetch(avenueSlugsQuery);
 }

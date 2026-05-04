@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Revive - RC Bombay West</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#ffdeaa",
+                        "inverse-surface": "#2f3036",
+                        "primary-fixed": "#dae2ff",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#271900",
+                        "outline-variant": "#c4c6d3",
+                        "on-tertiary-fixed": "#351000",
+                        "on-tertiary-fixed-variant": "#7a3005",
+                        "tertiary-container": "#722a00",
+                        "background": "#faf8ff",
+                        "tertiary-fixed-dim": "#ffb595",
+                        "surface": "#faf8ff",
+                        "secondary-container": "#ffc55f",
+                        "on-secondary-container": "#755100",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#eeedf5",
+                        "on-primary-container": "#8babff",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#385bac",
+                        "outline": "#747783",
+                        "surface-dim": "#dad9e1",
+                        "on-background": "#1a1b21",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e2e2e9",
+                        "secondary-fixed-dim": "#f5bd58",
+                        "on-surface-variant": "#434651",
+                        "inverse-on-surface": "#f1f0f7",
+                        "primary-container": "#123c8c",
+                        "surface-container-high": "#e8e7ef",
+                        "on-error": "#ffffff",
+                        "off-white": "#F8FAFC",
+                        "surface-bright": "#faf8ff",
+                        "muted-slate": "#64748B",
+                        "surface-container-low": "#f4f3fa",
+                        "inverse-primary": "#b2c5ff",
+                        "primary-fixed-dim": "#b2c5ff",
+                        "on-surface": "#1a1b21",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "deep-navy": "#0B1F4D",
+                        "primary": "#002667",
+                        "secondary": "#7d5700",
+                        "surface-container-highest": "#e2e2e9",
+                        "on-primary-fixed-variant": "#1b4292",
+                        "on-secondary-fixed-variant": "#5f4100",
+                        "warm-gold": "#F3C969",
+                        "on-primary-fixed": "#001848",
+                        "tertiary": "#4e1a00",
+                        "dark-ink": "#1F2937",
+                        "tertiary-fixed": "#ffdbcc",
+                        "on-tertiary-container": "#fa9261"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "xs": "8px",
+                        "sm": "16px",
+                        "max-width": "1280px",
+                        "gutter": "80px",
+                        "md": "32px",
+                        "xl": "128px",
+                        "lg": "64px"
+                    },
+                    "fontFamily": {
+                        "card-h3": ["Plus Jakarta Sans"],
+                        "hero-h1": ["Plus Jakarta Sans"],
+                        "section-h2": ["Plus Jakarta Sans"],
+                        "meta-label": ["Inter"],
+                        "body": ["Inter"]
+                    },
+                    "fontSize": {
+                        "card-h3": ["28px", { "lineHeight": "1.15", "fontWeight": "600" }],
+                        "hero-h1": ["80px", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "section-h2": ["48px", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "meta-label": ["14px", { "lineHeight": "1", "letterSpacing": "+0.05em", "fontWeight": "500" }],
+                        "body": ["18px", { "lineHeight": "1.65", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased font-body flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-md border-b border-slate-100 dark:border-slate-800 shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-[1440px] mx-auto">
+<a class="text-2xl font-black text-[#123C8C] dark:text-blue-400 tracking-tighter" href="#">RC BOMBAY WEST</a>
+<div class="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] font-bold tracking-tight">
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#123C8C] dark:hover:text-blue-300 transition-colors duration-300" href="#">Home</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#123C8C] dark:hover:text-blue-300 transition-colors duration-300" href="#">About</a>
+<a class="text-[#123C8C] dark:text-blue-400 border-b-2 border-[#123C8C] dark:border-blue-400 pb-1" href="#">Projects</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#123C8C] dark:hover:text-blue-300 transition-colors duration-300" href="#">Newsletters</a>
+</div>
+<a class="bg-primary text-on-primary px-6 py-3 rounded-lg font-meta-label text-meta-label hover:bg-primary-container transition-colors duration-300 scale-105 transition-transform duration-200 hidden md:block" href="#">Join Us</a>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative pt-xl pb-lg px-8 max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-7 z-10">
+<div class="inline-block bg-warm-gold text-dark-ink px-4 py-2 rounded-full font-meta-label text-meta-label mb-md uppercase tracking-wider">
+                    Community
+                </div>
+<h1 class="font-hero-h1 text-hero-h1 text-deep-navy mb-sm relative">
+                    Revive
+                    <span class="absolute -bottom-4 left-0 w-24 h-2 bg-warm-gold"></span>
+</h1>
+<p class="font-body text-body text-muted-slate max-w-2xl mt-md">
+                    A holistic approach to urban environmental sustainability. Project Revive focuses on breathing life back into our city's green spaces and coastal areas through direct action and community education.
+                </p>
+</div>
+<div class="md:col-span-5 relative h-[600px] mt-lg md:mt-0 rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
+<img alt="Environmental restoration visual" class="absolute inset-0 w-full h-full object-cover" data-alt="A striking image depicting hands planting a young sapling in rich, dark soil. The lighting is bright and optimistic, bathed in morning sunlight, highlighting the vibrant green leaves of the plant. The scene embodies hope and environmental restoration, set against a blurred, lush natural background. The overall aesthetic is warm, energetic, and culturally resonant, aligning with a high-performance startup landing page emphasizing sustainability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6gyTw2uSc5gq37Awdi6GGhCe7-_fTA_l4jm03X22v6XeY4rFolzZ3AjlCvipFHBotqTOtA1v9xoKVNYEc2Bm3AR44zZdPNTtPR-u5XSk8XkPMi_9HGDAvOU1h2Jv-_4EyX7nPEaMYDcqDKFss_jI3rFTUcFRkz_-ujVE-E1PvWmnA6Iet_YYyqRHXL6GjZVIAU3kmxpPjz041iDjt60BRZnnvVUo_TjpjPWSTJW42ce6Rge2D4fW5iv4qTac9p555cpbZuvfs"/>
+</div>
+</section>
+<!-- Overview Section (2 Column) -->
+<section class="py-xl px-8 bg-surface-container-low">
+<div class="max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div>
+<h2 class="font-section-h2 text-section-h2 text-deep-navy mb-md">The Mission</h2>
+<p class="font-body text-body text-muted-slate mb-sm">
+                        As urban landscapes expand, the vital ecosystems that support our city are under constant threat. Project Revive is our flagship environmental initiative designed to counteract this degradation through localized, high-impact interventions.
+                    </p>
+<p class="font-body text-body text-muted-slate">
+                        We believe that true sustainability starts at the grassroots level. By mobilizing youth volunteers, partnering with local authorities, and utilizing scientific planting methods, we aim to create self-sustaining green pockets and cleaner public spaces that benefit all residents.
+                    </p>
+</div>
+<div class="flex flex-col justify-center gap-sm">
+<div class="bg-white p-8 rounded-lg shadow-[0_4px_24px_rgba(0,0,0,0.08)] border-l-4 border-primary">
+<h3 class="font-card-h3 text-card-h3 text-deep-navy mb-2">Focus Areas</h3>
+<ul class="font-body text-body text-muted-slate space-y-2">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary fill-icon" data-icon="eco">eco</span> Urban Afforestation</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary fill-icon" data-icon="water_drop">water_drop</span> Coastal &amp; Lake Clean-ups</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary fill-icon" data-icon="recycling">recycling</span> Waste Management Awareness</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Story Blocks -->
+<section class="py-xl px-8 max-w-max-width mx-auto space-y-xl">
+<!-- Block 1: Tree Plantation -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-6 order-2 md:order-1">
+<h3 class="font-card-h3 text-card-h3 text-deep-navy mb-sm">Rooted in Change: Tree Plantation Drives</h3>
+<p class="font-body text-body text-muted-slate mb-md">
+                        Our plantation drives go beyond merely putting saplings in the ground. We utilize the Miyawaki method to create dense, native forests that grow 10x faster and are 30x more dense than conventional plantations. These micro-forests become vital carbon sinks and biodiversity hotspots within the urban sprawl.
+                    </p>
+<a class="inline-flex items-center gap-2 text-primary font-meta-label text-meta-label uppercase tracking-wider hover:text-primary-container transition-colors" href="#">
+                        Learn More <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="md:col-span-6 order-1 md:order-2 h-[400px] rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.08)] relative">
+<img alt="Tree plantation" class="absolute inset-0 w-full h-full object-cover" data-alt="A group of enthusiastic young volunteers engaged in a tree-planting activity in an urban park. The scene captures the energy of collective action, with individuals digging soil and gently placing saplings. The lighting is bright, natural daylight, casting soft shadows that emphasize the texture of the earth and the vibrant green of the plants. The mood is collaborative and deeply fulfilling, reflecting the 'Phoenix' theme of intentional growth and rising together in a professional yet culturally resonant visual style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoiEcJBz2Zmc6_yIhPpD_qwnw5d4Fk5sttC1oMfYc9dY8v2cQmhMKQDvtjfW04j8sVCvRKX1RXV-h_Kgo6uIR1yFBR2igiRYfycu_3aM9yDlhVCkLg215zErfhmzVRVD14MgjW8HF4Hz7boXj2P6P33-yIDxCfQt8Uz5l6od6y_M52y-4w8d7DVZstjCPkyoKQn2fQbWq2WB4IN9C8x21sUX9hVPWRujo0Korg-hI1RBZZiw5X8sWxXE4STTp6vJW8NzQ5NYN7"/>
+</div>
+</div>
+<!-- Block 2: Clean-up -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+<div class="md:col-span-6 h-[400px] rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.08)] relative">
+<img alt="Beach clean-up" class="absolute inset-0 w-full h-full object-cover" data-alt="A powerful image showing dedicated volunteers participating in a coastal clean-up drive early in the morning. The golden hour sunlight gently illuminates the shoreline, contrasting with the bags of collected debris. The volunteers, wearing coordinated, understated apparel, are focused on restoring the natural beauty of the beach. The overall aesthetic is clean, purposeful, and documentary-style, conveying a sense of urgent environmental stewardship and aligning with a high-end, content-driven editorial look." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFLZH62fDSySThLPor7jQ8WJ3TFikVOvubs4_XW6i_8RXZsl53_rE0RhIcabH-KSQm4HuyVdYtoQ-BQJvE3_fPxfAqt5ZOdBfvaScMo9kN4UINfgrk4R02xxHvrYWTqXRS0EkhPU5RTi8Uwy2uyOhFjyyx5J83a32EzbWGL0g3OQTf9JTZx5G071LzLwnB1igZ_bqonZ4qmpOK_oo3cveGwTPabFcfiTy6dulJbKciqUOE9U0z5QiV3oErGEX1DT9-7BQiyA_e"/>
+</div>
+<div class="md:col-span-6">
+<h3 class="font-card-h3 text-card-h3 text-deep-navy mb-sm">Restoring Shores: Coastal Clean-ups</h3>
+<p class="font-body text-body text-muted-slate mb-md">
+                        Mumbai's coastline is integral to its identity, yet severely impacted by marine debris. Through systematic, organized clean-up drives, we actively remove tons of plastic and waste from our beaches and mangroves, while simultaneously campaigning for responsible waste disposal at the source.
+                    </p>
+<a class="inline-flex items-center gap-2 text-primary font-meta-label text-meta-label uppercase tracking-wider hover:text-primary-container transition-colors" href="#">
+                        View Campaign <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-xl px-8 bg-deep-navy">
+<div class="max-w-max-width mx-auto">
+<h2 class="font-section-h2 text-section-h2 text-white text-center mb-lg">Measurable Impact</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+<div>
+<div class="text-[64px] font-extrabold text-warm-gold mb-2 leading-none">15,000+</div>
+<div class="font-meta-label text-meta-label text-muted-slate uppercase tracking-[+0.05em]">Trees Planted</div>
+</div>
+<div>
+<div class="text-[64px] font-extrabold text-warm-gold mb-2 leading-none">2,500+</div>
+<div class="font-meta-label text-meta-label text-muted-slate uppercase tracking-[+0.05em]">Volunteers Engaged</div>
+</div>
+<div>
+<div class="text-[64px] font-extrabold text-warm-gold mb-2 leading-none">40</div>
+<div class="font-meta-label text-meta-label text-muted-slate uppercase tracking-[+0.05em]">Acres Restored</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Masonry Gallery -->
+<section class="py-xl px-8 max-w-max-width mx-auto">
+<h2 class="font-section-h2 text-section-h2 text-deep-navy mb-lg text-center">In Action</h2>
+<div class="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4">
+<div class="break-inside-avoid rounded-lg overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
+<img alt="Gallery 1" class="w-full object-cover hover:scale-105 transition-transform duration-500" data-alt="A candid, high-quality photograph capturing a moment of interaction between volunteers during a community greening event. The lighting is soft and diffused, emphasizing the genuine smiles and shared purpose of the individuals. The background is a slightly blurred, vibrant urban park setting. The image evokes a sense of camaraderie and cultural resonance, fitting a premium, storytelling-focused editorial design that highlights human connection within environmental work." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXDrqhWUFOkiQt-penrmXh66jyxOy0TYyYXmbDK0XZhzWsAFzRX6m4x5J8nldZLpgZxvAKFC2ai1tXgMS7ezk0kKj_UjlQPgvb9mydmkygqite5SvaBC6eLNRJJjcPsiwdvnQ_cezkM1x2roGMGlQdabALjnSVwWB1M64f_8agNUGK5y8V7HpcAa2QqrSZ9Tg7rEepJV_damGVUPbS-WJcc3w-0sEajCRDJKTE8nzDD0MMvquANSxRmEiToVkYg7ploHmDACcS"/>
+</div>
+<div class="break-inside-avoid rounded-lg overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
+<img alt="Gallery 2" class="w-full object-cover hover:scale-105 transition-transform duration-500" data-alt="A striking close-up shot of a volunteer's hands carefully holding a small, vibrant green sapling ready for planting. The focus is sharp on the plant and hands, with a shallow depth of field blurring the earthy background. The lighting is bright and natural, creating a clean, modern aesthetic. This visual emphasizes intentional growth and direct action, perfectly aligning with the expressively minimal 'Phoenix' theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeySp8XNJpQ_gr682hy5A1HUQhLcGhV_gfSbAZIYCn8hZnx2tIWMDj_0982JEdPShIg3YCDJIYH-N0ez2dr-hmiGT-v6hEaf846YkL9xsuNsbp4VytnG2mm_JzfgdLdXIFKT8byoNqd19zw5bN6kg9-OKqSgbK0FH9ryUtMQlSKZpeRpW05tE76qm4Y11dj9ssK-2g7sjvHYy6Rus_oOP9D7CdxdkUnEnlo4t-GGCLO2O5nC9TOakYBtwWb7a9rbKAL8x3ziKH"/>
+</div>
+<div class="break-inside-avoid rounded-lg overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
+<img alt="Gallery 3" class="w-full object-cover hover:scale-105 transition-transform duration-500" data-alt="A wide-angle, documentary-style photograph showing a large group of volunteers actively participating in a beach clean-up under a clear blue sky. The composition emphasizes the scale of the effort, with individuals scattered across the sandy shore collecting debris. The lighting is bright and airy, contributing to an energetic and professional atmosphere. The image captures the essence of community mobilization and environmental stewardship in a clean, impactful manner." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZoWWFeYpP9T7qS35Eozlhcj4RDKlqwG_cxmeusYUAmUSZhcJDtUcDchFM6bxTvO6AOGX63Naksj2ZxfQIGdeG6dkWPtzD5Q5GWNT-hyRMihyThSlLWeZVN-B5Mlxfokruazig4clHB_69oXNNyUv8gtjsu9yVkbgQo1PssV1Uf-7FATfMLP5JkABegiOk3jXeNOqtM4qm8YS02KPcHzuIYlLqtxAbhg69TLRxndpz3EzyqDeYa0Sak8zoJ_ZkcT1_fi_EZqi1"/>
+</div>
+<div class="break-inside-avoid rounded-lg overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
+<img alt="Gallery 4" class="w-full object-cover hover:scale-105 transition-transform duration-500" data-alt="An atmospheric image of a newly established urban micro-forest, created using the Miyawaki method. The dense foliage of native plants creates a lush, green canopy, with dappled sunlight filtering through the leaves. The scene is tranquil yet teeming with life, showcasing the successful implementation of ecological restoration. The overall mood is serene and structurally sound, reflecting the high-performance, narrative-driven aesthetic of the project's visual identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ7AN7K0PtI1ez6769yKe5kfb5podnaBwVt75j_zzlVBEXFfjlvdCtuoBMV_coS-vYYYPrDP4EErXVTVOQnlAhkR3mefWiCjkGbyIC0QS9_5VY-_S01KUEiWeyTEwG1w_mJKGUWu3mRsEpkQqv-CHOG5obRydMiKYVtoCox-jQwCkikmJ3AoWNC_kGWUTQzTYIK8WOXzdQNdb04vILyFfyS899HQQamiF29wloanrycfsmvHs5-PDAgcV5TVOKX2IKq_drU2lW"/>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-xl px-8 bg-surface-container mb-lg rounded-xl max-w-[1200px] mx-auto text-center border border-outline-variant shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
+<h2 class="font-section-h2 text-section-h2 text-deep-navy mb-md">Ready to Make an Impact?</h2>
+<p class="font-body text-body text-muted-slate max-w-2xl mx-auto mb-lg">
+                Join our next drive and be part of the change. Whether you can spare a few hours on a weekend or want to lead a local initiative, there's a place for you in Project Revive.
+            </p>
+<button class="bg-gradient-to-r from-warm-gold to-[#e5b84c] text-dark-ink px-8 py-4 rounded-lg font-meta-label text-meta-label font-bold uppercase tracking-wider hover:shadow-[0_12px_40px_rgba(0,0,0,0.14)] hover:-translate-y-1 transition-all duration-300">
+                Volunteer Now
+            </button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 dark:bg-black w-full border-t border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 px-20 py-24 w-full max-w-[1440px] mx-auto">
+<div class="md:col-span-4 flex flex-col justify-between">
+<div class="text-xl font-bold text-white uppercase tracking-[0.2em] mb-4">RC BOMBAY WEST</div>
+<div class="font-['Inter'] text-sm tracking-wide text-slate-400">
+                    © 2024 Rotaract Club of Bombay West. Phoenix - Rise Above Yourself.
+                </div>
+</div>
+<div class="md:col-span-8 flex flex-wrap gap-8 md:justify-end items-start font-['Inter'] text-sm tracking-wide">
+<a class="text-slate-400 hover:text-white transition-colors duration-300 hover:translate-x-1 opacity-80 hover:opacity-100 block" href="#">Privacy Policy</a>
+<a class="text-slate-400 hover:text-white transition-colors duration-300 hover:translate-x-1 opacity-80 hover:opacity-100 block" href="#">Contact Us</a>
+<a class="text-slate-400 hover:text-white transition-colors duration-300 hover:translate-x-1 opacity-80 hover:opacity-100 block" href="#">Rotary International</a>
+<a class="text-slate-400 hover:text-white transition-colors duration-300 hover:translate-x-1 opacity-80 hover:opacity-100 block" href="#">District 3141</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bollyween - Flagship Event</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#ffdeaa",
+                        "inverse-surface": "#2f3036",
+                        "primary-fixed": "#dae2ff",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#271900",
+                        "outline-variant": "#c4c6d3",
+                        "on-tertiary-fixed": "#351000",
+                        "on-tertiary-fixed-variant": "#7a3005",
+                        "tertiary-container": "#722a00",
+                        "background": "#faf8ff",
+                        "tertiary-fixed-dim": "#ffb595",
+                        "surface": "#faf8ff",
+                        "secondary-container": "#ffc55f",
+                        "on-secondary-container": "#755100",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#eeedf5",
+                        "on-primary-container": "#8babff",
+                        "on-secondary": "#ffffff",
+                        "surface-tint": "#385bac",
+                        "outline": "#747783",
+                        "surface-dim": "#dad9e1",
+                        "on-background": "#1a1b21",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e2e2e9",
+                        "secondary-fixed-dim": "#f5bd58",
+                        "on-surface-variant": "#434651",
+                        "inverse-on-surface": "#f1f0f7",
+                        "primary-container": "#123c8c",
+                        "surface-container-high": "#e8e7ef",
+                        "on-error": "#ffffff",
+                        "off-white": "#F8FAFC",
+                        "surface-bright": "#faf8ff",
+                        "muted-slate": "#64748B",
+                        "surface-container-low": "#f4f3fa",
+                        "inverse-primary": "#b2c5ff",
+                        "primary-fixed-dim": "#b2c5ff",
+                        "on-surface": "#1a1b21",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "deep-navy": "#0B1F4D",
+                        "primary": "#002667",
+                        "secondary": "#7d5700",
+                        "surface-container-highest": "#e2e2e9",
+                        "on-primary-fixed-variant": "#1b4292",
+                        "on-secondary-fixed-variant": "#5f4100",
+                        "warm-gold": "#F3C969",
+                        "on-primary-fixed": "#001848",
+                        "tertiary": "#4e1a00",
+                        "dark-ink": "#1F2937",
+                        "tertiary-fixed": "#ffdbcc",
+                        "on-tertiary-container": "#fa9261"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "xs": "8px",
+                        "sm": "16px",
+                        "max-width": "1280px",
+                        "gutter": "80px",
+                        "md": "32px",
+                        "xl": "128px",
+                        "lg": "64px"
+                    },
+                    "fontFamily": {
+                        "card-h3": ["Plus Jakarta Sans"],
+                        "hero-h1": ["Plus Jakarta Sans"],
+                        "section-h2": ["Plus Jakarta Sans"],
+                        "meta-label": ["Inter"],
+                        "body": ["Inter"]
+                    },
+                    "fontSize": {
+                        "card-h3": ["28px", { "lineHeight": "1.15", "fontWeight": "600" }],
+                        "hero-h1": ["80px", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "section-h2": ["48px", { "lineHeight": "1.15", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "meta-label": ["14px", { "lineHeight": "1", "letterSpacing": "+0.05em", "fontWeight": "500" }],
+                        "body": ["18px", { "lineHeight": "1.65", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body text-body selection:bg-warm-gold selection:text-dark-ink min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="docked full-width top-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-md shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-[1440px] mx-auto">
+<div class="text-2xl font-black text-[#123C8C] dark:text-blue-400 tracking-tighter">
+                RC BOMBAY WEST
+            </div>
+<div class="hidden md:flex space-x-8">
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#123C8C] dark:hover:text-blue-300 transition-colors duration-300 font-['Plus_Jakarta_Sans'] font-bold tracking-tight" href="#">Home</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#123C8C] dark:hover:text-blue-300 transition-colors duration-300 font-['Plus_Jakarta_Sans'] font-bold tracking-tight" href="#">About</a>
+<a class="text-[#123C8C] dark:text-blue-400 border-b-2 border-[#123C8C] dark:border-blue-400 pb-1 hover:text-[#123C8C] dark:hover:text-blue-300 transition-colors duration-300 font-['Plus_Jakarta_Sans'] font-bold tracking-tight" href="#">Projects</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-[#123C8C] dark:hover:text-blue-300 transition-colors duration-300 font-['Plus_Jakarta_Sans'] font-bold tracking-tight" href="#">Newsletters</a>
+</div>
+<button class="bg-primary text-on-primary rounded-lg px-6 py-3 font-meta-label text-meta-label hover:shadow-[0_12px_40px_rgba(0,0,0,0.14)] transition-shadow scale-105 duration-200">
+                Join Us
+            </button>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative pt-xl pb-lg px-gutter max-w-max-width mx-auto">
+<div class="relative z-10 w-full md:w-2/3">
+<span class="inline-block bg-warm-gold text-dark-ink px-4 py-2 rounded-full font-meta-label text-meta-label uppercase tracking-widest mb-sm">
+                    Fellowship
+                </span>
+<h1 class="font-hero-h1 text-hero-h1 text-deep-navy mb-md">
+                    Bollyween
+                </h1>
+<p class="font-body text-body text-muted-slate max-w-2xl">
+                    Where the drama of Bollywood meets the eerie spirit of Halloween. A flagship fellowship event that redefined cultural fusion, bringing together hundreds of members for a night of unforgettable performances and spectacular costumes.
+                </p>
+</div>
+<div class="mt-lg w-full h-[614px] rounded-xl overflow-hidden relative shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
+<img alt="Bollyween Hero Image" class="w-full h-full object-cover" data-alt="A vibrant, high-energy party scene capturing the essence of 'Bollyween'. The image shows a crowd of young people in elaborate costumes that blend traditional Indian Bollywood glamour with spooky Halloween elements. The lighting is dynamic, with dramatic pink, purple, and blue spotlights cutting through a slight atmospheric haze, evoking a high-performance, cultural celebration. The overall aesthetic is expressive, energetic, and perfectly aligns with a premium, light-mode editorial event landing page." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgrnxtboN9qut1mHaQyX5FBMnHMG3G5QP2PhYahzMcQVxKcFpeuQEi-d82en08LLkkis-r95sZbRkVhl3mhr2KLxkQaj21CNbIjR27J_j-cEYN8_4oJ527gQBwz7kPG8loLYobOfyOEYS6PzWk_z811eLEEMR-UI7V4AOsS4iVK9ohMRSZzxfTiwVvrYvYCd_D3ojYgIqJx0dP-ua-Vxb4GVk9sqGm760BGvNwUP1vQYnEWghFVOCEMaNnjpNmUub8iAF0K4Qi"/>
+</div>
+</section>
+<!-- Narrative & Stats Grid -->
+<section class="py-xl px-gutter max-w-max-width mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="col-span-1 md:col-span-8">
+<h2 class="font-section-h2 text-section-h2 text-deep-navy mb-md">
+                    A Cultural Phenomenon
+                </h2>
+<div class="space-y-sm text-muted-slate font-body text-body">
+<p>
+                        Bollyween wasn't just a party; it was an immersive experience that challenged our members to blend two wildly different aesthetics. The goal was to foster deeper connections within the club by encouraging collaborative costume design, group dance performances, and shared creative expression.
+                    </p>
+<p>
+                        The evening featured a curated playlist that seamlessly transitioned from classic Bollywood anthems to Halloween thrillers, setting the stage for spontaneous dance-offs and a truly electric atmosphere. This event stands as a testament to our commitment to creating spaces where tradition and modern fun intersect.
+                    </p>
+</div>
+</div>
+<div class="col-span-1 md:col-span-4 flex flex-col space-y-md">
+<div class="bg-surface-container-low p-md rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
+<span class="font-meta-label text-meta-label text-muted-slate uppercase tracking-widest block mb-xs">Attendance</span>
+<span class="font-hero-h1 text-[64px] text-warm-gold block">350+</span>
+</div>
+<div class="bg-deep-navy p-md rounded-xl shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
+<span class="font-meta-label text-meta-label text-warm-gold uppercase tracking-widest block mb-xs">Funds Raised</span>
+<span class="font-hero-h1 text-[64px] text-white block">₹1.2L</span>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-xl px-gutter max-w-max-width mx-auto">
+<h2 class="font-section-h2 text-section-h2 text-deep-navy mb-lg">
+                Moments Captured
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-sm">
+<!-- Gallery Image 1 -->
+<div class="rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.08)] group aspect-[3/4]">
+<img alt="Gallery Image 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A close-up shot of two attendees at the Bollyween event, smiling and posing for the camera. One person is wearing a classic, sparkling Bollywood lehenga accessorized with subtle, eerie vampire makeup, while the other wears a dapper sherwani paired with a classic ghost mask. The lighting is warm and festive, with soft bokeh in the background highlighting the premium, editorial feel of the event space. The mood is joyful and culturally rich." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQVMy9ufghdze2-BASeYD-WjsUQnA-n1lQmdgwTfztg-03VpnRnWaac3LWXCXKQUkgG2YlJOMXS07XjCrn8q13jaLjag3HwqQbBIjMP7nsUIDe9VO1fAIAjQ0sVdXOY_kVPg4aPiCa4LP3A8arwndtH0NbKKbS_ux5cy-O3oYCxGQUrgWKYV-o2JnT8j4K2nxS4bce0VHbISHtkxMbUklQJiw4GMNtuZF6cD4NgbQGmlYmCxcEVQfIefOqPNzVRaoMyCM2t4la"/>
+</div>
+<!-- Gallery Image 2 -->
+<div class="rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.08)] group aspect-square">
+<img alt="Gallery Image 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A dynamic, wide-angle shot of the dance floor at Bollyween. A large group of young adults are mid-dance, their movements energetic and synchronized. The room is decorated with a mix of elegant marigold garlands and tasteful, spooky cobwebs. High-contrast lighting with warm gold and deep navy tones creates a cinematic, high-performance atmosphere, perfectly capturing the theme's upward motion and cultural fusion." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR60NAOOqkSiLDx3Se9JgP-w5w1EP0VdjNBx9kEIPiYt_DaSaA_jIcfefnu4IG03qoamkSr8wmeVKIUSr5GhzgmoDBtxUZJm9cYFWqlV6SZCohSlX0Ufbgo4_ES0OXWOhByl4fF49jtjAEdqlxvtR4TkCGH5TOsfMNieiI3fJHop8A6ubwW5gQKDxs_zPTOmyhu_IUINApwrUltqOAjX_METTcwXI-NLGFI7qLz2gSwpr4BI4dqXicQoL9Y3y7eoa497ft2mUh"/>
+</div>
+<!-- Gallery Image 3 -->
+<div class="rounded-xl overflow-hidden shadow-[0_4px_24px_rgba(0,0,0,0.08)] group aspect-[3/4]">
+<img alt="Gallery Image 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A candid photograph of the DJ booth at the Bollyween event. The DJ, wearing a subtle masquerade mask, is adjusting the mix, surrounded by glowing equipment. The foreground shows silhouetted dancers with hands raised in excitement. The lighting features sharp beams of light cutting through the space, emphasizing a modern, engaging, and professional event environment consistent with a high-end UI narrative." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn07ZkJ2qzHC-Zb6zMMdCtsObLCQ13KUQk5IrQhRZiJyTTgW3bhb4B4uMOsnmMK0gsBsGunLeAcjXtrjVNNdfYM20clemjMriJ13Ui6hJN0jprLZeaAgIEQPOKJs-6Y64YETiLn6VfWRCPi6EEibjj71eldW5sxfJkf0vxO-6o1I9zV0w6JU1BasiTFLerr3Cz2eYfcc08FzHaFmNeOWstRaYF_ZXiMdwYN9AD-1NWD4lcSepRJr_gAGeWj7iarAzqRnutOaz6"/>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-xl px-gutter max-w-max-width mx-auto text-center">
+<div class="bg-surface-container-low rounded-xl p-lg shadow-[0_4px_24px_rgba(0,0,0,0.08)] relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="font-section-h2 text-section-h2 text-deep-navy mb-sm">
+                        Don't Miss Out
+                    </h2>
+<p class="font-body text-body text-muted-slate max-w-xl mx-auto mb-md">
+                        Join us for our next fellowship gathering. Experience the energy, build connections, and be part of the community.
+                    </p>
+<button class="bg-primary text-on-primary rounded-lg px-8 py-4 font-meta-label text-meta-label hover:shadow-[0_12px_40px_rgba(0,0,0,0.14)] transition-shadow duration-300">
+                        View Upcoming Events
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-900 dark:bg-black w-full rounded-none border-t border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 px-20 py-24 w-full max-w-[1440px] mx-auto">
+<div class="md:col-span-12 flex flex-col items-center text-center">
+<div class="text-xl font-bold text-white uppercase tracking-[0.2em] mb-sm opacity-80 hover:opacity-100 transition-opacity">
+                    RC BOMBAY WEST
+                </div>
+<div class="flex flex-wrap justify-center gap-6 mb-md">
+<a class="font-['Inter'] text-sm tracking-wide text-slate-400 hover:text-white hover:translate-x-1 transition-all duration-300" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-sm tracking-wide text-slate-400 hover:text-white hover:translate-x-1 transition-all duration-300" href="#">Contact Us</a>
+<a class="font-['Inter'] text-sm tracking-wide text-slate-400 hover:text-white hover:translate-x-1 transition-all duration-300" href="#">Rotary International</a>
+<a class="font-['Inter'] text-sm tracking-wide text-slate-400 hover:text-white hover:translate-x-1 transition-all duration-300" href="#">District 3141</a>
+</div>
+<div class="font-['Inter'] text-sm tracking-wide text-slate-400">
+                    © 2024 Rotaract Club of Bombay West. Phoenix - Rise Above Yourself.
+                </div>
+</div>
+</div>
+</footer>
+</body></html>
