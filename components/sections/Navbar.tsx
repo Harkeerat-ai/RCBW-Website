@@ -6,10 +6,9 @@ import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/events", label: "Events" },
+  { href: "/events", label: "Flagships" },
   { href: "/newsletter", label: "Newsletter" },
-  { href: "/contact", label: "Contact" },
+  { href: "/about", label: "About" },
 ];
 
 export default function Navbar() {
@@ -57,7 +56,9 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <Link
-          href="/contact"
+          href="https://docs.google.com/forms/d/1lpc4zqX9qqP887wGD7E_piusMYOgoWNM-kiuWAvwLoA/viewform?sharingaction=ownershiptransfer&ts=682163c7&edit_requested=true"
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden md:inline-flex items-center px-5 py-2.5 text-sm font-medium rounded-full bg-gradient-to-r from-primary to-accent text-white hover:opacity-90 transition-opacity duration-200 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         >
           Join Us
@@ -120,7 +121,9 @@ export default function Navbar() {
               ))}
               <li className="pt-2">
                 <Link
-                  href="/contact"
+                  href="https://docs.google.com/forms/d/1lpc4zqX9qqP887wGD7E_piusMYOgoWNM-kiuWAvwLoA/viewform?sharingaction=ownershiptransfer&ts=682163c7&edit_requested=true"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setIsOpen(false)}
                   className="block text-center px-4 py-3 rounded-full bg-gradient-to-r from-primary to-accent text-white font-medium"
                 >

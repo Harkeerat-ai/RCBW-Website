@@ -1,19 +1,14 @@
 import Link from "next/link";
 
-const footerLinks = {
-  club: [
-    { href: "/about", label: "About Us" },
-    { href: "/events", label: "Events" },
-    { href: "/newsletter", label: "Newsletter" },
-    { href: "/contact", label: "Contact" },
-  ],
-  avenues: [
-    { label: "Community Service", href: "/events" },
-    { label: "International Service", href: "/events" },
-    { label: "Professional Development", href: "/events" },
-    { label: "Sports & Culture", href: "/events" },
-  ],
-};
+const footerLinks = [
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/events", label: "Flagships" },
+  {
+    href: "https://docs.google.com/forms/d/1lpc4zqX9qqP887wGD7E_piusMYOgoWNM-kiuWAvwLoA/viewform?sharingaction=ownershiptransfer&ts=682163c7&edit_requested=true",
+    label: "Join Us",
+  },
+];
 
 export default function Footer() {
   return (
@@ -28,14 +23,12 @@ export default function Footer() {
               </div>
               <div>
                 <h3 className="font-heading font-bold text-lg text-foreground">
-                  Rotaract Club of Bombay West
+                  RC Bombay West
                 </h3>
-                <p className="text-xs text-muted">Rise Above Yourself</p>
               </div>
             </div>
             <p className="text-sm text-muted max-w-md mb-6">
-              A youth-led community of changemakers under Rotary International,
-              dedicated to service, leadership, and fellowship in Mumbai and beyond.
+              Join a community of changemakers! At RCBW, we believe in rising above ourselves to create meaningful impact.
             </p>
             {/* Social Links */}
             <div className="flex gap-3">
@@ -43,7 +36,7 @@ export default function Footer() {
                 <a
                   key={platform}
                   href="#"
-                  className="w-9 h-9 rounded-lg bg-surface-elevated flex items-center justify-center text-muted hover:text-foreground hover:bg-white/10 transition-colors duration-200"
+                  className="w-9 h-9 rounded-lg bg-surface-elevated flex items-center justify-center text-muted hover:text-foreground hover:bg-black/5 transition-colors duration-200"
                   aria-label={`Follow us on ${platform}`}
                 >
                   <span className="text-xs font-medium">
@@ -57,13 +50,14 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h4 className="font-heading font-semibold text-sm uppercase tracking-wider text-foreground mb-4">
-              Quick Links
+              Menu
             </h4>
             <ul className="space-y-2.5">
-              {footerLinks.club.map((link) => (
-                <li key={link.href}>
+              {footerLinks.map((link) => (
+                <li key={link.label}>
                   <Link
                     href={link.href}
+                    {...(link.label === "Join Us" ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                     className="text-sm text-muted hover:text-foreground transition-colors duration-200"
                   >
                     {link.label}
@@ -73,22 +67,27 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Avenues */}
+          {/* Contact */}
           <div>
             <h4 className="font-heading font-semibold text-sm uppercase tracking-wider text-foreground mb-4">
-              Avenues
+              Contact Us
             </h4>
-            <ul className="space-y-2.5">
-              {footerLinks.avenues.map((avenue) => (
-                <li key={avenue.label}>
-                  <Link
-                    href={avenue.href}
-                    className="text-sm text-muted hover:text-foreground transition-colors duration-200"
-                  >
-                    {avenue.label}
-                  </Link>
-                </li>
-              ))}
+            <ul className="space-y-2.5 text-sm text-muted">
+              <li>
+                <a href="tel:+919820304620" className="hover:text-foreground transition-colors">
+                  +91 98203 04620
+                </a>
+              </li>
+              <li>
+                <a href="tel:+917977522662" className="hover:text-foreground transition-colors">
+                  +91 79775 22662
+                </a>
+              </li>
+              <li>
+                <a href="mailto:rtr.saniakadam.rcbw@gmail.com" className="hover:text-foreground transition-colors">
+                  rtr.saniakadam.rcbw@gmail.com
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -99,7 +98,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Rotaract Club of Bombay West. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground">
-            Part of Rotary International District 3141
+            RID 3141
           </p>
         </div>
       </div>

@@ -38,15 +38,14 @@ export default function HeroSection() {
           </p>
 
           {/* Main headline */}
-          <h1 className="font-heading font-bold mb-6 text-white">
-            Rise Above{" "}
-            <span className="text-accent">Yourself</span>
+          <h1 className="font-heading font-bold mb-6 text-white leading-tight">
+            Join a community of{" "}
+            <span className="text-accent">changemakers!</span>
           </h1>
 
           {/* Subtext */}
-          <p className="text-lg md:text-xl text-white/80 max-w-xl mx-auto mb-10 leading-relaxed">
-            A community of young changemakers committed to service, leadership,
-            and building a better Mumbai — and a better world.
+          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 leading-relaxed">
+            At RCBW, we believe in rising above ourselves to create meaningful impact. Explore vibrant events, inspiring projects, and a family beyond Rotaract. Together, we make a difference!
           </p>
 
           {/* CTA Buttons */}

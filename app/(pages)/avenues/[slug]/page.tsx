@@ -10,7 +10,6 @@ import {
 } from "@/lib/sanity";
 import { urlFor } from "@/lib/sanity/client";
 import EventCard from "@/components/blocks/EventCard";
-import { MoveRight } from "lucide-react";
 
 export async function generateStaticParams() {
   const slugs = await getAvenueSlugs();
